@@ -1,0 +1,16 @@
+{
+    "required": true,
+    "package": "net.enecske.mob_explosion_griefing.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+        "CreeperEntityMixin",
+        "FireballEntityMixin",
+        "ProjectileEntityMixin",
+        "SmallFireballEntityMixin",
+        "WitherEntityMixin",
+        "WitherSkullEntityMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+	}
+}
