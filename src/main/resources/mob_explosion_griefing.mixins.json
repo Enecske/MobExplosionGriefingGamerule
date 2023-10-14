@@ -5,7 +5,6 @@
     "mixins": [
         "CreeperEntityMixin",
         "FireballEntityMixin",
-        "ProjectileEntityMixin",
         "SmallFireballEntityMixin",
         "WitherEntityMixin",
         "WitherSkullEntityMixin"
