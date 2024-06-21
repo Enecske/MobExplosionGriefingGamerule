@@ -18,6 +18,15 @@ public class MobExplosionGriefingGamerule implements ModInitializer {
 	public static final GameRules.Key<GameRules.BooleanRule> WITHER_GRIEFING =
 			GameRuleRegistry.register("witherGriefing", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
 
+	public static final GameRules.Key<GameRules.BooleanRule> CREEPER_GRIEFING =
+			GameRuleRegistry.register("creeperGriefing", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
+
+	public static final GameRules.Key<GameRules.BooleanRule> GHAST_GRIEFING =
+			GameRuleRegistry.register("ghastGriefing", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
+
+	public static final GameRules.Key<GameRules.BooleanRule> ENDERMAN_GRIEFING =
+			GameRuleRegistry.register("endermanGriefing", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
+
 	@Override
 	public void onInitialize() {
 		LOGGER.info("MobExplosionGriefingGamerule is loaded!");
