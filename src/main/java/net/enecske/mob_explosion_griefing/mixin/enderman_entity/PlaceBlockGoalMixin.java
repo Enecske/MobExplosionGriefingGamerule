@@ -1,22 +1,21 @@
 package net.enecske.mob_explosion_griefing.mixin.enderman_entity;
 
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.enecske.mob_explosion_griefing.MobExplosionGriefingGamerule;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.mob.EndermanEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.world.GameRules;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(targets = "net.minecraft.entity.mob.EndermanEntity$PlaceBlockGoal")
-public class PlaceBlockGoalMixin extends Goal {
-    @Final @Shadow private EndermanEntity enderman;
-
-    @Override
-    public boolean canStart() {
-        if (this.enderman.getCarriedBlock() == null) {
-            return false;
-        } else {
-            return this.enderman.getWorld().getGameRules().getBoolean(MobExplosionGriefingGamerule.ENDERMAN_GRIEFING) && this.enderman.getRandom().nextInt(toGoalTicks(2000)) == 0;
-        }
+public abstract class PlaceBlockGoalMixin extends Goal {
+    @WrapOperation(method = "canStart", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/GameRules;getBoolean(Lnet/minecraft/world/GameRules$Key;)Z"))
+    private boolean modifyCanStart(GameRules instance, GameRules.Key<GameRules.BooleanRule> rule, Operation<Boolean> original) {
+        return original.call(instance, MobExplosionGriefingGamerule.ENDERMAN_GRIEFING);
     }
 }
