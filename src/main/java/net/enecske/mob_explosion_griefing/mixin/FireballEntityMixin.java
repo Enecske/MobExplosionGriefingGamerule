@@ -14,7 +14,7 @@ public class FireballEntityMixin {
     @WrapOperation(method = "onCollision", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/GameRules;getBoolean(Lnet/minecraft/world/GameRules$Key;)Z"))
     private boolean redirectMobGriefing(GameRules instance, GameRules.Key<GameRules.BooleanRule> rule, Operation<Boolean> original) {
         if (rule == GameRules.DO_MOB_GRIEFING)
-            return original.call(instance, MobExplosionGriefingGamerule.GHAST_GRIEFING);;
+            return original.call(instance, MobExplosionGriefingGamerule.GHAST_GRIEFING);
         return original.call(instance, rule);
     }
 }
