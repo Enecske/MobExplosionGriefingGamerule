@@ -39,8 +39,6 @@ public abstract class ServerWorldMixin {
             )
     )
     private Explosion.DestructionType modifyMobExplosionGriefing(Explosion.DestructionType original, @Local(argsOnly = true) Entity entity) {
-        if (!this.getGameRules().getBoolean(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
-            return Explosion.DestructionType.KEEP;
         return switch (entity) {
             case WitherSkullEntity ignored -> {
                 if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.WITHER_GRIEFING))
@@ -53,14 +51,17 @@ public abstract class ServerWorldMixin {
                 yield Explosion.DestructionType.KEEP;
             }
             case CreeperEntity ignored -> {
-                if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.CREEPER_GRIEFING))
+                if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.CREEPER_GRIEFING) && this.getGameRules().getBoolean(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
                     yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
                 yield Explosion.DestructionType.KEEP;
             }
             case FireballEntity fireball -> {
-                if (fireball.getOwner() instanceof GhastEntity && this.getGameRules().getBoolean(MobExplosionGriefingGamerule.GHAST_GRIEFING))
-                    yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
-                yield Explosion.DestructionType.KEEP;
+                if (fireball.getOwner() instanceof GhastEntity) {
+                    if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.GHAST_GRIEFING) && this.getGameRules().getBoolean(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
+                        yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
+                    yield Explosion.DestructionType.KEEP;
+                }
+                yield original;
             }
             default -> original;
         };
