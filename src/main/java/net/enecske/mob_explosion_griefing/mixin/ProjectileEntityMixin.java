@@ -7,7 +7,6 @@ import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.world.GameRules;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(ProjectileEntity.class)
 public class ProjectileEntityMixin {

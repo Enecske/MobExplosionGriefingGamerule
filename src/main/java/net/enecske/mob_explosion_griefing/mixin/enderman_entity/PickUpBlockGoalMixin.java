@@ -4,12 +4,8 @@ import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.enecske.mob_explosion_griefing.MobExplosionGriefingGamerule;
 import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.mob.EndermanEntity;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.GameRules;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(targets = "net.minecraft.entity.mob.EndermanEntity$PickUpBlockGoal")
