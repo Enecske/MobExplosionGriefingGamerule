@@ -27,6 +27,12 @@ public class MobExplosionGriefingGamerule implements ModInitializer {
 	public static final GameRules.Key<GameRules.BooleanRule> ENDERMAN_GRIEFING =
 			GameRuleRegistry.register("endermanGriefing", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
 
+	public static final GameRules.Key<GameRules.BooleanRule> DOOR_BREAKING_GRIEFING =
+			GameRuleRegistry.register("doorBreakingGriefing", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
+
+	public static final GameRules.Key<GameRules.BooleanRule> STEP_AND_DESTROY_GOAL =
+			GameRuleRegistry.register("stepAndDestroyGoal", GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
+
 	@Override
 	public void onInitialize() {
 		LOGGER.info("MobExplosionGriefingGamerule is loaded!");

@@ -39,6 +39,8 @@ public abstract class ServerWorldMixin {
             )
     )
     private Explosion.DestructionType modifyMobExplosionGriefing(Explosion.DestructionType original, @Local(argsOnly = true) Entity entity) {
+        if (!this.getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING)) return Explosion.DestructionType.KEEP;
+
         return switch (entity) {
             case WitherSkullEntity ignored -> {
                 if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.WITHER_GRIEFING))

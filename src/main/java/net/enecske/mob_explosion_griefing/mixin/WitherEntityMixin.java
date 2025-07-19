@@ -13,7 +13,7 @@ public class WitherEntityMixin {
     @WrapOperation(method = "mobTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/GameRules;getBoolean(Lnet/minecraft/world/GameRules$Key;)Z"))
     private boolean redirectBlockBreakingGriefing(GameRules instance, GameRules.Key<GameRules.BooleanRule> rule, Operation<Boolean> original) {
         if (rule == GameRules.DO_MOB_GRIEFING)
-            return original.call(instance, MobExplosionGriefingGamerule.WITHER_GRIEFING);
+            return original.call(instance, MobExplosionGriefingGamerule.WITHER_GRIEFING) && original.call(instance, GameRules.DO_MOB_GRIEFING);
         return original.call(instance, rule);
     }
 }

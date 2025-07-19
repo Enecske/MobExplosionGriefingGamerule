@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 public abstract class PickUpBlockGoalMixin extends Goal {
     @WrapOperation(method = "canStart", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/GameRules;getBoolean(Lnet/minecraft/world/GameRules$Key;)Z"))
     private boolean modifyCanStart(GameRules instance, GameRules.Key<GameRules.BooleanRule> rule, Operation<Boolean> original) {
-        return original.call(instance, MobExplosionGriefingGamerule.ENDERMAN_GRIEFING);
+        return original.call(instance, MobExplosionGriefingGamerule.ENDERMAN_GRIEFING) && original.call(instance, GameRules.DO_MOB_GRIEFING);
     }
 
 }
