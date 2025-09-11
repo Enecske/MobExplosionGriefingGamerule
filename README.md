@@ -1,5 +1,7 @@
 # MobExplosionGriefingGamerule
 
+<a href="https://modrinth.com/mod/mobexplosiongriefinggamerule"><img src="https://img.shields.io/badge/dynamic/json?color=158000&label=Downloads&prefix=+%20&query=downloads&url=https://api.modrinth.com/v2/project/l9H9JPmo&logo=modrinth"></a>
+
 ## Fabric, Quilt
 
 This Minecraft mods separates explosions and other destructive mob actions from the `mobGriefing` gamerule.
