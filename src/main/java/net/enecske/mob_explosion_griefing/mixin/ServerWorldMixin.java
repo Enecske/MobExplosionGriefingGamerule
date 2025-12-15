@@ -10,8 +10,9 @@ import net.minecraft.entity.mob.GhastEntity;
 import net.minecraft.entity.projectile.FireballEntity;
 import net.minecraft.entity.projectile.WitherSkullEntity;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.world.GameRules;
 import net.minecraft.world.explosion.Explosion;
+import net.minecraft.world.rule.GameRule;
+import net.minecraft.world.rule.GameRules;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -23,43 +24,43 @@ public abstract class ServerWorldMixin {
     public abstract GameRules getGameRules();
 
     @Shadow
-    protected abstract Explosion.DestructionType getDestructionType(GameRules.Key<GameRules.BooleanRule> decayRule);
+    protected abstract Explosion.DestructionType getDestructionType(GameRule<Boolean> decayRule);
 
     @ModifyExpressionValue(
             method = "createExplosion",
             at = @At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/server/world/ServerWorld;getDestructionType(Lnet/minecraft/world/GameRules$Key;)Lnet/minecraft/world/explosion/Explosion$DestructionType;"
+                    target = "Lnet/minecraft/server/world/ServerWorld;getDestructionType(Lnet/minecraft/world/rule/GameRule;)Lnet/minecraft/world/explosion/Explosion$DestructionType;"
             ),
             slice = @Slice(
                     from = @At(
                             value = "FIELD",
-                            target = "Lnet/minecraft/world/GameRules;MOB_EXPLOSION_DROP_DECAY:Lnet/minecraft/world/GameRules$Key;"
+                            target = "Lnet/minecraft/world/rule/GameRules;MOB_EXPLOSION_DROP_DECAY:Lnet/minecraft/world/rule/GameRule;"
                     )
             )
     )
     private Explosion.DestructionType modifyMobExplosionGriefing(Explosion.DestructionType original, @Local(argsOnly = true) Entity entity) {
-        if (!this.getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING)) return Explosion.DestructionType.KEEP;
+        if (!this.getGameRules().getValue(GameRules.DO_MOB_GRIEFING)) return Explosion.DestructionType.KEEP;
 
         return switch (entity) {
             case WitherSkullEntity ignored -> {
-                if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.WITHER_GRIEFING))
+                if (this.getGameRules().getValue(MobExplosionGriefingGamerule.WITHER_GRIEFING))
                     yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
                 yield Explosion.DestructionType.KEEP;
             }
             case WitherEntity ignored -> {
-                if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.WITHER_GRIEFING))
+                if (this.getGameRules().getValue(MobExplosionGriefingGamerule.WITHER_GRIEFING))
                     yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
                 yield Explosion.DestructionType.KEEP;
             }
             case CreeperEntity ignored -> {
-                if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.CREEPER_GRIEFING) && this.getGameRules().getBoolean(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
+                if (this.getGameRules().getValue(MobExplosionGriefingGamerule.CREEPER_GRIEFING) && this.getGameRules().getValue(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
                     yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
                 yield Explosion.DestructionType.KEEP;
             }
             case FireballEntity fireball -> {
                 if (fireball.getOwner() instanceof GhastEntity) {
-                    if (this.getGameRules().getBoolean(MobExplosionGriefingGamerule.GHAST_GRIEFING) && this.getGameRules().getBoolean(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
+                    if (this.getGameRules().getValue(MobExplosionGriefingGamerule.GHAST_GRIEFING) && this.getGameRules().getValue(MobExplosionGriefingGamerule.MOB_EXPLOSION_GRIEFING))
                         yield this.getDestructionType(GameRules.MOB_EXPLOSION_DROP_DECAY);
                     yield Explosion.DestructionType.KEEP;
                 }
@@ -67,6 +68,5 @@ public abstract class ServerWorldMixin {
             }
             default -> original;
         };
-
     }
 }

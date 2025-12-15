@@ -1,9 +1,9 @@
 {
-  "gamerule.mobExplosionGriefing": "Allow destructive mob explosions",
-  "gamerule.witherGriefing": "Allow destructive Wither actions",
-  "gamerule.endermanGriefing": "Allow Endermen to pick up blocks",
-  "gamerule.creeperGriefing": "Allow Creeper explosions to destroy blocks",
-  "gamerule.ghastGriefing": "Allow Ghast Fireballs to destroy blocks and light fires",
-  "gamerule.doorBreakingGriefing": "Allow mobs to break doors",
-  "gamerule.stepAndDestroyGoal": "Allow certain mobs to pathfind to blocks (e.g. Turtle Eggs) in order to destroy them"
+  "gamerule.mob_explosion_griefing.mob_explosion_griefing": "Allow destructive mob explosions",
+  "gamerule.mob_explosion_griefing.wither_griefing": "Allow destructive Wither actions",
+  "gamerule.mob_explosion_griefing.enderman_griefing": "Allow Endermen to pick up blocks",
+  "gamerule.mob_explosion_griefing.creeper_griefing": "Allow Creeper explosions to destroy blocks",
+  "gamerule.mob_explosion_griefing.ghast_griefing": "Allow Ghast Fireballs to destroy blocks and light fires",
+  "gamerule.mob_explosion_griefing.door_breaking_griefing": "Allow mobs to break doors",
+  "gamerule.mob_explosion_griefing.step_and_destroy_goal": "Allow certain mobs to pathfind to blocks (e.g. Turtle Eggs) in order to destroy them"
 }
