@@ -2,26 +2,29 @@
 
 <a href="https://modrinth.com/mod/mobexplosiongriefinggamerule"><img src="https://img.shields.io/badge/dynamic/json?color=158000&label=Downloads&prefix=+%20&query=downloads&url=https://api.modrinth.com/v2/project/l9H9JPmo&logo=modrinth"></a>
 
-## Fabric, Quilt
+<a href="https://fabricmc.net"><img src="https://img.shields.io/badge/Mod%20Loader-Fabric-lightyellow?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFHGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTEyLTE2VDE2OjU0OjE3LTA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOS0wNy0yOFQyMToxNzo0OC0wNzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOS0wNy0yOFQyMToxNzo0OC0wNzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowZWRiMWMyYy1mZjhjLWU0NDEtOTMxZi00OTVkNGYxNGM3NjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MGVkYjFjMmMtZmY4Yy1lNDQxLTkzMWYtNDk1ZDRmMTRjNzYwIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MGVkYjFjMmMtZmY4Yy1lNDQxLTkzMWYtNDk1ZDRmMTRjNzYwIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowZWRiMWMyYy1mZjhjLWU0NDEtOTMxZi00OTVkNGYxNGM3NjAiIHN0RXZ0OndoZW49IjIwMTgtMTItMTZUMTY6NTQ6MTctMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4/HiGMAAAAtUlEQVRYw+XXrQqAMBQF4D2P2eBL+QIG8RnEJFaNBjEum+0+zMQLtwwv+wV3ZzhhMDgfJ0wUSinxZUQWgKos1JP/AbD4OneIDyQPwCFniA+EJ4CaXm4TxAXCC0BNHgLhAdAnx9hC8PwGSRtAFVMQjF7cNTWED8B1cgwW20yfJgAvrssAsZ1cB3g/xckAxr6FmCDU5N6f488BrpCQ4rQBJkiMYh4ACmLzwOQF0CExinkCsvw7vgGikl+OotaKRwAAAABJRU5ErkJggg=="></a>
+<a href="https://files.minecraftforge.net/net/minecraftforge/forge"><img src="https://img.shields.io/badge/Mod%20Loader-Forge-lightyellow?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALySURBVEhLtZZPaBNBFMbzz42NtoII0aCiRQURVGIFEak3URFEEHqUCkVsPZSKoHjQiwjiQb1UFOlBUXoS0XjowYte1JutF6kKUtYIUQpN1k3zz9+bndos3TabNPng4817b+Z7Mzs7sxtoFKVSaV25XO6BD4vF4nodbi4QD+nmfxDbWqlUnsFfUIHYNZ12gUluI32R/Ed4Uof9g0EGPKVdBUS7nLIumMTbdT7BmLNwjHjOSSuklIAfMLhDN6V9Hx7XrvhrEJtyNOdBfBjzBP5RATcKcDSbzQa1zNJA7A7slTYrGmTwd/Z5tUoCcq+V7NL4DVP07Udjh23b/ooLGHSMwVPY/UJRw97V6QDuJYl54Af9RuBpijb2YqbT6RCr3YTIIQTHEEpiTVEndlj6ENuDW5RYNcj3KZHlAqGD8CrsolgHthv9HPYz+2hIH/y3qqobD5RAM0CxPgTfY3drfx/+NPaG9s+oklUgNm6a5oKj2zAQvI6uje0Xn/Yu2hNsUbJQKBj4k1JYI0/uOfGVavBykM/nIxSRfb7taKvVjUrOsqw425CQNrFeUu+wA7BTYvXC82jkcrlEKBTqjkajbcFg0JIQBfIcpQ+xWEy9AyBMcbEV+vzFrtAUTZXQmKsxrfu54DkBisXpLIVKTkT1s3kqVyKRiGyHraLzhTx1qtAGL6D5yHFrgAmcU8+d/YdWFUuwUQxpeRc8Z05neZPvwQEVqB+zcAKdT9ivLEhOz5hhGF9U1i8YdBS+QOgnnIW1ICfmFnfHzkwmU2tb/APRtbCTI/ZYF/KCfPmO6CGtAadgC0Xki+eFYd2tteDxtlMs7dR04bzuUhcauTblsxx1mi5s17Y14PYLs/q9rDTlLHgBLN6TIfps0EOaB4Tl0zwO/dwDM3CES0tuxZrwdVQQvIm57HgKb4i9ZGLfaK8Kh8MHsD0wLkkgN+RGbj7TcReH3wkkMfIzQrMyyXfilUpUgUe/mfgJmrLyGSb3lInNXdmLIBD4Bw72x5r0eQ99AAAAAElFTkSuQmCC"></a>
 
-This Minecraft mods separates explosions and other destructive mob actions from the `mobGriefing` gamerule.
+<img src="https://img.shields.io/badge/Enviroment-Server-fuchsia" alt="Environment">
 
-It adds a custom gamerule, `mobExplosionGriefing`, which makes all mob explosions (except Withers) not destroy blocks. Other actions, like fireballs lighting fires, will still happen.
+This Minecraft mods separates explosions and other destructive mob actions from the `mob_griefing` gamerule.
+
+It adds a custom gamerule, `mob_explosion_griefing:mob_explosion_griefing`, which makes all mob explosions (except Withers) not destroy blocks. Other actions, like fireballs lighting fires, will still happen.
 
 Additionally, certain actions can also be controlled separately.
- - By turning `creeperGriefing` off, Creepers will not destroy blocks when exploding.
- - By turning `ghastGriefing` off, Ghasts will not destroy blocks when shooting Fireballs. They won't light fires either.
- - By turning `witherGriefing` off, Withers will not destroy blocks with their spawn explosion, when taking damage or when shooting Skulls. However, Wither Roses will still be placed.
- - By turning `endermanGriefing` off, Endermen will not pick up or place blocks.
- - By turning `doorBreakingGriefing` off, mobs will not be able to break doors, no matter the difficulty.
- - By turning `stepAndDestroyGoal` off, mobs will not pathfind to blocks with the objective of stepping on them and destroying them (e.g. Zombies won't attack Turtle Eggs). If they (or the player) do end up stepping on the block, it will still be destroyed.
+ - By turning `mob_explosion_griefing:creeper_Griefing` off, Creepers will not destroy blocks when exploding.
+ - By turning `mob_explosion_griefing:ghast_griefing` off, Ghasts will not destroy blocks when shooting Fireballs. They won't light fires either.
+ - By turning `mob_explosion_griefing:wither_griefing` off, Withers will not destroy blocks with their spawn explosion, when taking damage or when shooting Skulls. However, Wither Roses will still be placed.
+ - By turning `mob_explosion_griefing:enderman_griefing` off, Endermen will not pick up or place blocks.
+ - By turning `mob_explosion_griefing:door_breaking_griefing` off, mobs will not be able to break doors, no matter the difficulty.
+ - By turning `mob_explosion_griefing:step_and_destroy_goal` off, mobs will not pathfind to blocks with the objective of stepping on them and destroying them (e.g. Zombies won't attack Turtle Eggs). If they (or the player) do end up stepping on the block, it will still be destroyed.
 
 All of these gamerules are `true` by default.
 
-Turning `mobExplosionGriefing` off will disable all explosions of the above (except Withers'), but other actions will still be allowed. For example, if `mobExplosionGriefing` is `false`, but `ghastGriefing` is `true`, Fireballs won't destroy blocks, but they will still light fires.
+Turning `mob_explosion_griefing:mob_explosion_griefing` off will disable all explosions of the above (except Withers'), but other actions will still be allowed. For example, if `mobExplosionGriefing` is `false`, but `ghastGriefing` is `true`, Fireballs won't destroy blocks, but they will still light fires.
 
-Turning `mobGriefing` off will disable all destructive mob actions, just like in vanilla, and will ignore the values of all gamerules added by this mod.
+Turning `mob_griefing` off will disable all destructive mob actions, just like in vanilla, and will ignore the values of all gamerules added by this mod.
 
-### This mod only needs to be installed server-side.
+**After updating to 1.21.11 or above, the values of all game rules added by this mod will be reset to `true`. You need to reset them manually!**
 
 Other vanilla functionality should not be affected. If you find any bugs or have any ideas on how the mod could be enhanced, please post a **GitHub Issue**.
