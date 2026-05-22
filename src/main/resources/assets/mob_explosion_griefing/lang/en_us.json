@@ -1,4 +1,9 @@
 {
   "gamerule.mobExplosionGriefing": "Allow destructive mob explosions",
-  "gamerule.witherGriefing": "Allow destructive wither actions"
+  "gamerule.witherGriefing": "Allow destructive Wither actions",
+  "gamerule.endermanGriefing": "Allow Endermen to pick up blocks",
+  "gamerule.creeperGriefing": "Allow Creeper explosions to destroy blocks",
+  "gamerule.ghastGriefing": "Allow Ghast Fireballs to destroy blocks and light fires",
+  "gamerule.doorBreakingGriefing": "Allow mobs to break doors",
+  "gamerule.turtleEggGriefing": "Allow mobs to destroy turtle eggs"
 }
