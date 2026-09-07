@@ -65,7 +65,7 @@ public abstract class ServerLevelMixin {
                 }
                 yield original;
             }
-            default -> original;
+            case null, default -> original;
         };
     }
 }
